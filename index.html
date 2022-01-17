@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Komputer Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Komputer Store</h1>
+    </div>
+    <div id="container">
+        <div id="bankMenu">
+            <h1>Spank Bank</h1>
+            <h3>Your most trusted name in banking!</h3>
+            <p id="bankBalanceTag">Balance: </p>
+            <p id="currentLoanTag">Current Loan: </p>
+            <div class="horizontalCenter">
+                <button id="getLoanButton" onclick="getLoanButtonClick(balance)">Get a Loan</button>
+            </div>
+        </div>
+
+
+        <div id="workMenu">
+            <h1>Slave Corp.</h1>
+            <h3>Your onestopshop to success!</h3>
+            <div id="cashTag">Cash in hand:</div>
+            <br>
+            <div class="horizontalCenter">
+                <button id="depositButton" onclick="depositCashButtonClick(cash)">Bank Yo Cash</button>
+                <button id="workButton" onclick="workButtonClick()">Go To Work</button>
+            </div>
+            <div class="horizontalCenter">
+                <button id="allTowardsLoanButton" onclick="allTowardsLoanButtonClick(cash)">All Towards Loan</button>
+            </div>
+        </div>
+
+
+        <div id="laptopMenu">
+            <h1>Komputer Store</h1>
+            <h3>All of your Komputer needs, met.</h3>
+            <br>
+            <select id="laptopSelect" onchange="getProductInfo()"></select>
+            <div id="specsArea">
+                <h2>Specifications: </h3>
+                <ul id=specsList>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="productDisplayContainer">
+        <div id="productImageDisplay"></div>
+        <div id="productDescription"></div>
+        <div id="productPrice">
+            <h1 id="laptopPriceTag">Price</h1>
+            <button id="buyLaptopButton" onclick="buyLaptopButtonClick(computer)">Buy Now!</button>
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+    <p><small style="font-size: 5px;">I am not a designer and I have no wish to become one. xD</small></p>
+</body>
+</html>

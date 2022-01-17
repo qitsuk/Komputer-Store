@@ -1,0 +1,172 @@
+body {
+    background-color: gray;
+}
+
+/* Just for the lulz */
+@keyframes title {
+    0% {left: 0px;}
+    10% { color: lightcoral; left: 85%; }
+    20% { color: darkred; left: 0px;}
+    30% { color: lightcoral; left: 85%; }
+    40% { color: darkred; left: 0px;}
+    50% { color: lightcoral; left: 85%; }
+    60% { color: darkred; left: 0px;}
+    70% { color: lightcoral; left: 85%; }
+    80% { color: darkred; left: 0px;}
+    90% { color: lightcoral; left: 85%; }
+    100% {left: 0px;}
+}
+.header h1 {
+    color: darkred;
+    position: relative;
+    animation: title;
+    size: 125;
+    animation-duration: 720s;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+}
+
+#container {
+    height: fit-content;
+    width: 100%;
+    font-size: 0;
+}
+#bankMenu, #workMenu, #laptopMenu {
+    display: inline-block;
+    *display: inline;
+    height: 300px;
+    zoom: 1;
+    vertical-align: top;
+    font-size: 12px;
+    margin-top: 0px;
+
+}
+#bankMenu {
+    width: 33%;
+    background: lightblue;
+}
+#bankMenu h1 {
+        font-family: Arial;
+        font-weight: lighter;
+        font-size: 100;
+        text-align: center;
+        margin: 0;
+        color: orangered;
+}
+#bankMenu h3 {
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 35;
+    text-align: center;
+    margin: 0;
+    color: orange;
+}
+#bankBalanceTag {
+    padding-left: 10px;
+    align-self: left;
+}
+#currentLoanTag {
+    padding: 10px;
+    align-self: left;
+    visibility: hidden;
+}
+#getLoanButton {
+    width: 90%;
+}
+
+#workMenu {
+    width: 33%;
+    background: lightgray;
+}
+#workMenu h1 {
+    color: darkred;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 100;
+    text-align: center;
+    margin: 0;
+}
+#workMenu h3 {
+    color: red;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 35;
+    text-align: center;
+    margin: 0;
+}
+#depositButton {
+    margin-right: 5px;
+    width: 45%;
+}
+#salaryTag {
+    margin-left: 10px;
+}
+#workButton {
+    margin-left: 5px;
+    width: 45%;
+}
+#allTowardsLoanButton {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 92%;
+    visibility: hidden;
+}
+#laptopMenu {
+    width: 33%;
+    background: lightgreen;
+}
+
+#laptopMenu h1 {
+    color: blue;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 100;
+    text-align: center;
+    margin: 0;
+}
+#laptopMenu h2 {
+    color:blueviolet;
+    margin-left: 10px;
+}
+#laptopMenu h3 {
+    color: yellow;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 35;
+    text-align: center;
+    margin: 0;
+}
+
+#laptopSelection {
+    text-align: center;
+}
+
+.horizontalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#laptopSelect {
+    display: block;
+    margin: 0 auto;
+}
+
+#productDisplayContainer {
+    border-radius: 25px;
+    border: 2px solid greenyellow;
+    padding: 20px; 
+    width: 97%;
+    height: fit-content;  
+}
+
+#productImageDisplay, #productDescription, #productPrice {
+    display: inline-block;
+    *display: inline;
+    height: fit-content;
+    width: 33%;
+    zoom: 1;
+    vertical-align: top;
+    font-size: 12px;
+}
