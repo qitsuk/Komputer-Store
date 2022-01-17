@@ -3,6 +3,7 @@ body {
 }
 
 /* Just for the lulz */
+/*
 @keyframes title {
     0% {left: 0px;}
     10% { color: lightcoral; left: 85%; }
@@ -25,7 +26,7 @@ body {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     
-}
+} */
 
 #container {
     height: fit-content;
