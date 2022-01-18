@@ -110,7 +110,7 @@ function depositCashButtonClick(money) {
             updateBankBalanceTag(balance);
             updateCashTag(cash);
             updateCurrentLoanTag(currentLoan);
-        // If the interest is not higher than the remainder of the loan, then we just deduct the interest.
+            // If the interest is not higher than the remainder of the loan, then we just deduct the interest.
         } else {
             currentLoan -= parseFloat(loanInterest);
             balance += parseFloat(cash - loanInterest);
@@ -120,7 +120,7 @@ function depositCashButtonClick(money) {
             updateCashTag(cash);
             updateCurrentLoanTag(currentLoan);
         }
-    // And if we have no loan, we just deposit the money to the users account.
+        // And if we have no loan, we just deposit the money to the users account.
     } else {
         balance += parseFloat(money);
         cash = 0;
@@ -222,7 +222,7 @@ function displayLaptopDescription(laptop) {
         productDescription.appendChild(laptopDescription);
     } else {
         document.getElementById("laptopTitle").innerText = laptop.title;
-        document.getElementById("laptopDescription").innerText = laptop.description;        
+        document.getElementById("laptopDescription").innerText = laptop.description;
     }
 }
 
@@ -244,7 +244,7 @@ async function getSelectedLaptop(id) {
             displayLaptopPrice(data);
             computer = data;
         });
-        
+
 }
 
 // This is the onchange function for the select (dropdown). All we do here is get the ID of the selected laptop
@@ -260,8 +260,8 @@ function buyLaptopButtonClick(laptop) {
     if (balance >= laptop.price) {
         balance -= parseFloat(laptop.price);
         updateBankBalanceTag(balance);
-        alert("Congratulatios. You are now the proud owner of a brand spanking new " + laptop.title + 
-        ". Please enjoy and feel free to come back any time.");
+        alert("Congratulations. You are now the proud owner of a brand spanking new " + laptop.title +
+            ". Please enjoy and feel free to come back any time.");
     } else {
         alert("Sorry, it looks like you're about DKK " + (laptop.price - balance) + " short. Go do some work, and come back, when you're serious about purchasing.");
     }
