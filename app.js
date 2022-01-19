@@ -72,12 +72,13 @@ function getLoanButtonClick(currentBalance) {
                 // When adding to the balance, I have to parse the number, otherwise it just concat's the two.
                 balance += parseFloat(desiredLoan);
                 updateBankBalanceTag(parseFloat(balance));
-                updateCurrentLoanTag(currentLoan)
+                updateCurrentLoanTag(currentLoan);
+                // If we have a loan, make a new button appear
+                document.getElementById("allTowardsLoanButton").style.visibility = "visible";
             }
         }
     }
-    // If we have a loan, make a new button appear
-    document.getElementById("allTowardsLoanButton").style.visibility = "visible";
+
 }
 
 //#endregion
