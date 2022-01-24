@@ -8,8 +8,9 @@ Also, probably not the cleanest code I've ever written. Time is a factor. Again,
 
 # USAGE
 
-After cloning this repo, either host it either via a local html server, such as XAMPP, WampServer or akin, or 
-host the solution via the LiveServer plugin, in VSCode.
+After cloning this repo, either host it via a local html server, such as XAMPP, WampServer or akin, or 
+host the solution via the LiveServer plugin, in VSCode (go to Extentions and search for LiveServer. After installing,
+right click the index.html file and select "Open with Live Server").
 
 # Try it, before you buy it!
 
